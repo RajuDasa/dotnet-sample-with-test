@@ -15,7 +15,7 @@ public class PrimeService_IsPrimeShould
     [InlineData(0)]
     [InlineData(1)]
     [InlineData(19)]
-    public void IsPrime_Value_-1_0_1_19_ReturnFalse(int value)
+    public void IsPrime_Value_minus1_0_1_19_ReturnFalse(int value)
     {
         var result = _primeService.IsPrime(value);
 

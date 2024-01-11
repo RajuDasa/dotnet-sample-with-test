@@ -3,16 +3,16 @@
 //uses implict using
 // See https://aka.ms/new-console-template for more information
 
-public static void main(string[] args)
-{
-    if(args == null || args.Length ==0)
-        throw new InvalidArgumentError();
+    
+    Console.WriteLine("** Prime number checker **");
+    
+    if(args.Length == 0)
+        Console.WriteLine("No arguments passed.");
 
     var obj = new PrimeService.PrimeService();
     int number;
 
-    Console.WriteLine("** Prime number checker **");
-    Console.WriteLine("passed int number: ${args[0]} ");
+    Console.WriteLine($"passed int number: {args[0]} ");
     number = Convert.ToInt32(args[0]);
 
     if (obj.IsPrime(number))
