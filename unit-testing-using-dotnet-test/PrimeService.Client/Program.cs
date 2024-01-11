@@ -23,4 +23,4 @@
     {
         Console.WriteLine("It is not prime");
     }
-}
+
