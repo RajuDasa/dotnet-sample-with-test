@@ -6,9 +6,10 @@
     
     Console.WriteLine("** Prime number checker **");
     
-    if(args.Length == 0)
+    if(args.Length == 0){
         Console.WriteLine("No arguments passed.");
-
+	return;
+    }
     var obj = new PrimeService.PrimeService();
     int number;
 
