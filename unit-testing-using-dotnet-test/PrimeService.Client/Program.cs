@@ -2,5 +2,19 @@
 
 //uses implict using
 // See https://aka.ms/new-console-template for more information
+
 var obj = new PrimeService.PrimeService();
-Console.WriteLine("Is 1 Prime number? : " + obj.IsPrime(1));
+int number;
+
+Console.WriteLine("** Prime number checker **");
+Console.WriteLine("Enter int number: ");
+number = Convert.ToInt32(Console.ReadLine());
+
+if (obj.IsPrime(number))
+{
+    Console.WriteLine("It is prime");
+}
+else
+{
+    Console.WriteLine("It is not prime");
+}
